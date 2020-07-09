@@ -41,7 +41,6 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-//Make all 'a' tags into an array
 
 const navMenu = document.getElementsByTagName('a')
 navMenu[0].textContent = 'Services'
@@ -50,6 +49,7 @@ navMenu[2].textContent = 'Vision'
 navMenu[3].textContent = 'Features'
 navMenu[4].textContent = 'About'
 navMenu[5].textContent = 'Contact'
+
 navMenu[0].style.color = "green"
 navMenu[1].style.color = "green"
 navMenu[2].style.color = "green"
@@ -80,8 +80,6 @@ childElement.appendChild(newNavItem2);
 // const navMenu4 = navMenu[3].textContent = siteContent["nav"]["nav-item-4"];
 // const navMenu5 = navMenu[4].textContent = siteContent["nav"]["nav-item-5"];
 // const navMenu6 = navMenu[5].textContent = siteContent["nav"]["nav-item-6"];
-
-
 
 
 const heading = document.querySelector("h1")
