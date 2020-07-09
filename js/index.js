@@ -53,15 +53,17 @@ navMenu.forEach( a => {
   a.style.color = "green"
 })
 
+let headImg = document.getElementById("cta-img");
+headImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
 const heading = document.getElementsByTagName("h1")
 console.log(heading);
 
 const button1 = document.querySelector("button");
 console.log(button1);
 
-const codeImg = document.getElementById('cta-img');
-console.log(codeImg)
-codeImg.src = "img\mid-page-accent.jpg"
+const codeImg = document.getElementById('middle-img');
+codeImg.setAttribute('src', siteContent["main-content"]["img-src"]);
 
 const featuresHead = document.getElementsByTagName("h4")
 console.log(featuresHead)
