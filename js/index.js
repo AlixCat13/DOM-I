@@ -57,6 +57,19 @@ navMenu[3].style.color = "green"
 navMenu[4].style.color = "green"
 navMenu[5].style.color = "green"
 
+const newNavItem = document.createElement('a')
+newNavItem.textContent = 'Careers'
+newNavItem.marginLeft = '20px'
+
+const parentElement = document.querySelector('a')
+parentElement.prepend(newNavItem);
+
+const newNavItem2 = document.createElement('a')
+newNavItem2.textContent = 'Log In'
+
+const childElement = document.querySelector('a')
+childElement.appendChild(newNavItem2);
+
 
 
 // const navMenu = document.querySelectorAll("a");
