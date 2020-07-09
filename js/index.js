@@ -41,54 +41,75 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-const navMenu = document.querySelectorAll("a");
-console.log(navMenu);
-const navMenu1 = navMenu[0].textContent = siteContent["nav"]["nav-item-1"];
-const navMenu2 = navMenu[1].textContent = siteContent["nav"]["nav-item-2"];
-const navMenu3 = navMenu[2].textContent = siteContent["nav"]["nav-item-3"];
-const navMenu4 = navMenu[3].textContent = siteContent["nav"]["nav-item-4"];
-const navMenu5 = navMenu[4].textContent = siteContent["nav"]["nav-item-5"];
-const navMenu6 = navMenu[5].textContent = siteContent["nav"]["nav-item-6"];
-navMenu.forEach( a => {
-  a.style.color = "green"
-})
+//Make all 'a' tags into an array
 
-let headImg = document.getElementById("cta-img");
-headImg.setAttribute('src', siteContent["cta"]["img-src"]);
+const navMenu = document.getElementsByTagName('a')
+navMenu[0].textContent = 'Services'
+navMenu[1].textContent = 'Product'
+navMenu[2].textContent = 'Vision'
+navMenu[3].textContent = 'Features'
+navMenu[4].textContent = 'About'
+navMenu[5].textContent = 'Contact'
+navMenu[0].style.color = "green"
+navMenu[1].style.color = "green"
+navMenu[2].style.color = "green"
+navMenu[3].style.color = "green"
+navMenu[4].style.color = "green"
+navMenu[5].style.color = "green"
 
-const heading = document.getElementsByTagName("h1")
-console.log(heading);
 
-const button1 = document.querySelector("button");
+
+// const navMenu = document.querySelectorAll("a");
+// console.log(navMenu);
+// const navMenu1 = navMenu[0].textContent = siteContent["nav"]["nav-item-1"];
+// const navMenu2 = navMenu[1].textContent = siteContent["nav"]["nav-item-2"];
+// const navMenu3 = navMenu[2].textContent = siteContent["nav"]["nav-item-3"];
+// const navMenu4 = navMenu[3].textContent = siteContent["nav"]["nav-item-4"];
+// const navMenu5 = navMenu[4].textContent = siteContent["nav"]["nav-item-5"];
+// const navMenu6 = navMenu[5].textContent = siteContent["nav"]["nav-item-6"];
+
+
+
+
+const heading = document.querySelector("h1")
+heading.innerHTML = 'DOM <br>Is</br> Awesome';
+
+const button1 = document.querySelector(".cta button");
+button1.innerText = 'Get Started'
+button1.fontSize = '16px'
 console.log(button1);
 
-const codeImg = document.getElementById('middle-img');
-codeImg.setAttribute('src', siteContent["main-content"]["img-src"]);
+let headImg = document.getElementById("cta-img");
+headImg.src = "img/header-img.png";
 
-const featuresHead = document.getElementsByTagName("h4")
-console.log(featuresHead)
-const featuresHead1 = featuresHead[0].textContent = siteContent["main-content"]["features-h4"];
+const topHeads = document.querySelectorAll('.top-content h4');
+topHeads[0].textContent = 'Features'
+topHeads[1].textContent = 'About'
 
-const featuresContent = document.getElementsByTagName("p")
-console.log(featuresContent);
-const featuresContent1 = featuresContent[0].textContent = siteContent["main-content"]["features-content"];
+const topContent = document.querySelectorAll('.top-content p');
+topContent[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+topContent[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis'
 
-const aboutHead1 = aboutHead.textContent = siteContent["main-content"]["about-h4"];
-const aboutContent1 = featuresContent[1].textContent = siteContent["main-content"]["about-content"];
+const middleImg = document.getElementById('middle-img');
+middleImg.src = "img/mid-page-accent.jpg"
+
+const bottomHeads = document.querySelectorAll('.bottom-content h4');
+bottomHeads[0].textContent = 'Services'
+bottomHeads[1].textContent = 'Product'
+bottomHeads[2].textContent = 'Vision'
+
+const bottomContent = document.querySelectorAll('.bottom-content p')
+bottomContent[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+bottomContent[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+bottomContent[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+const contactHead = document.querySelector('.contact h4');
+contactHead.textContent = 'Contact'
+const contactText = document.querySelectorAll('.contact p')
+contactText[0].innerHTML = '123 Way 456 Street<br></br>Somewhere, USA'
+contactText[1].textContent = '1 (888) 888-8888'
+contactText[2].textContent = 'sales@greatidea.io'
 
 
-const servicesHead1 = servicesHead.textContent = siteContent["main-content"]["services-h4"];
-const servicesContent1 = featuresContent[2].textContent = siteContent["main-content"]["services-content"];
-
-const productHead1 = productHead[3].textContent = siteContent["main-content"]["product-h4"];
-const productContent1 = featuresContent[3].textContent = siteContent["main-content"]["product-content"];
-
-const visionHead1 = visionHead[4].textContent = siteContent["main-content"]["vision-h4"];
-const visionContent1 = featuresContent[4].textContent = siteContent["main-content"]["vision-content"];
-
-const contactHead = document.getElementsByTagName(".contact-h4")
-const contactHead1 = contactHead.textContent = siteContent["contact"]["contact-h4"];
-
-
-const pageFooter = document.getElementsByTagName("footer")
-console.log('this is the footer', pageFooter);
+const pageFooter = document.querySelector('footer')
+pageFooter.textContent = 'Copyright Great Idea! 2018'
