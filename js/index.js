@@ -41,8 +41,52 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-let navMenu = document.querySelectorAll(".container");
-console.log('this is the nav menu', navMenu);
+const navMenu = document.querySelectorAll("a");
+console.log(navMenu);
+const navMenu1 = navMenu[0].textContent = siteContent["nav"]["nav-item-1"];
+const navMenu2 = navMenu[1].textContent = siteContent["nav"]["nav-item-2"];
+const navMenu3 = navMenu[2].textContent = siteContent["nav"]["nav-item-3"];
+const navMenu4 = navMenu[3].textContent = siteContent["nav"]["nav-item-4"];
+const navMenu5 = navMenu[4].textContent = siteContent["nav"]["nav-item-5"];
+const navMenu6 = navMenu[5].textContent = siteContent["nav"]["nav-item-6"];
+navMenu.forEach( a => {
+  a.style.color = "green"
+})
 
-let pageFooter = document.getElementById("copyright")
+const heading = document.getElementsByTagName("h1")
+console.log(heading);
+
+const button1 = document.querySelector("button");
+console.log(button1);
+
+const codeImg = document.getElementById('cta-img');
+console.log(codeImg)
+codeImg.src = "img\mid-page-accent.jpg"
+
+const featuresHead = document.getElementsByTagName("h4")
+console.log(featuresHead)
+const featuresHead1 = featuresHead[0].textContent = siteContent["main-content"]["features-h4"];
+
+const featuresContent = document.getElementsByTagName("p")
+console.log(featuresContent);
+const featuresContent1 = featuresContent[0].textContent = siteContent["main-content"]["features-content"];
+
+const aboutHead1 = aboutHead.textContent = siteContent["main-content"]["about-h4"];
+const aboutContent1 = featuresContent[1].textContent = siteContent["main-content"]["about-content"];
+
+
+const servicesHead1 = servicesHead.textContent = siteContent["main-content"]["services-h4"];
+const servicesContent1 = featuresContent[2].textContent = siteContent["main-content"]["services-content"];
+
+const productHead1 = productHead[3].textContent = siteContent["main-content"]["product-h4"];
+const productContent1 = featuresContent[3].textContent = siteContent["main-content"]["product-content"];
+
+const visionHead1 = visionHead[4].textContent = siteContent["main-content"]["vision-h4"];
+const visionContent1 = featuresContent[4].textContent = siteContent["main-content"]["vision-content"];
+
+const contactHead = document.getElementsByTagName(".contact-h4")
+const contactHead1 = contactHead.textContent = siteContent["contact"]["contact-h4"];
+
+
+const pageFooter = document.getElementsByTagName("footer")
 console.log('this is the footer', pageFooter);
