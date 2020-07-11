@@ -71,7 +71,7 @@ const childElement = document.querySelector('a')
 childElement.appendChild(newNavItem2);
 
 
-
+//Found a better way to do this. 
 // const navMenu = document.querySelectorAll("a");
 // console.log(navMenu);
 // const navMenu1 = navMenu[0].textContent = siteContent["nav"]["nav-item-1"];
