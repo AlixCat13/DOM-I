@@ -50,6 +50,9 @@ navMenu[3].textContent = 'Features'
 navMenu[4].textContent = 'About'
 navMenu[5].textContent = 'Contact'
 
+//tried this and it didn't work
+// navMenu[0,1,2,3,4,5].style.color = "green"
+
 navMenu[0].style.color = "green"
 navMenu[1].style.color = "green"
 navMenu[2].style.color = "green"
